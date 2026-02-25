@@ -19,19 +19,38 @@
         let myCot=8810862208;
         console.log(myCot);
         console.log(typeof(myCot));
-
+        //boolean
         let add=null;
         console.log(add);
         console.log(typeof(add));
-
+        //undefined
         let email;
         console.log(email);
         console.log(typeof(email));
-
+        //bigint
         let bigAMT = BigInt(2372364326348734754343873873273736);
         console.log(bigAMT);
         console.log(typeof(bigAMT));
-        
+
+        //symbol - a unique primite identifier
+        // the java script ES6 introduced a new primitive data type called symbol.Symbols are immutable (cannot be changed)and are unique
+
+        let val1 = Symbol("id");
+        let val2 = Symbol("id");
+        console.log(val1);
+        console.log(val2);
+
+        //refernce or non primitive defined in pair i.e. key and value
+        //object{},function() and array[]
+        let myINfo ={
+            name: "aryan",
+            mob: 9548296046,
+            email: "hsjhdhbksdjxbfsjhxdj",
+            adress: null,                                                            
+        }
+
+        console.log(myINfo);
+        console.log(myINfo.name);
         </script>
 </body>
 </html>
