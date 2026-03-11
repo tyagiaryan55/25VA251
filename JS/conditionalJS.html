@@ -7,16 +7,39 @@
 </head>
 <body>
     <script>
-        let myAge=18;
-        if(myAge>=18){
-            console.log("valid age of vote casting ")
+        //if.....
+        let age=18;
+        if(age<18){
+            console.log("not valid eligible for voting");
         }
         else{
-            console.log("not valid age")
+            console.log("eligible");
         }
-        
-        //
 
+        //switch---case
+        let grade='A';
+        switch(grade){
+            case 'A': result=("First division");
+            break;
+            case 'B': result=("Second division");
+            break;
+            case 'C': result=("Third division");
+            break;
+            default:result="fail";
+        }
+        console.log(result);
+        //if....elseif....else....
+        let marks=67;
+        if(marks>=60){
+            console.log("First division marks");
+        }
+        else if(marks<59 && marks>40){
+            console.log("second division marks");
+        }
+        else{
+            console.log("third division marks");
+        }
+       
     </script>
 </body>
 </html>
