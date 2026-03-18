@@ -129,6 +129,18 @@
             }
         }
         userdata();
+        //Local storage-Local storage is a web storage feature in JavaScript that allows you to store key-value pairs in a web browser. Unlike cookies, the data stored in local storage does not expire and remains available even after the browser is closed and reopened. This makes it useful for persisting data across sessions, enhancing user experience by maintaining state and preferences.
+        let userInfo={
+            name:"John",
+            age:19,
+            mob:8819989928,
+            email:"john.banega.don@gmail.com"
+        }
+        //convert JSON object to string
+        localStorage.setItem('preferences',JSON.stringify(userInfo));
+        //retrieve the string and parse it back into an object
+        let storagePreference=JSON.parse(localStorsge.getItem('preference'));
+        console.log(storagePreference.name);
 
 
 
